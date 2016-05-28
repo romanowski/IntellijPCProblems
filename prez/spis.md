@@ -1,3 +1,3 @@
 * Spis treści
 
-1. [Wstep](1.md)
+1. [Wstep](wstep.md)
