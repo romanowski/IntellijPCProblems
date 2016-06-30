@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.scala-sbt" module="zinc-apiinfo_2.11" revision="1.0.0-M5-dfc7a7c2267fa2f60d1fcf6409b1d64036ab77b0" status="integration" publication="20160630150317">
+		<license name="BSD New" url="https://github.com/sbt/sbt/blob/0.13/LICENSE"/>
+		<description homepage="https://github.com/sbt/zinc">
+		Incremental compiler of Scala
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		
+		
+		
+		
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		
+	</configurations>
+	<publications>
+		<artifact name="zinc-apiinfo_2.11" type="pom" ext="pom" conf="pom"/>
+		<artifact name="zinc-apiinfo_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="zinc-apiinfo_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="zinc-apiinfo_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" conf="compile->default(compile)"/>
+		<dependency org="org.scala-sbt" name="compiler-interface" rev="1.0.0-M5-dfc7a7c2267fa2f60d1fcf6409b1d64036ab77b0" conf="compile->default(compile)"/>
+		<dependency org="org.scala-sbt" name="zinc-classfile_2.11" rev="1.0.0-M5-dfc7a7c2267fa2f60d1fcf6409b1d64036ab77b0" conf="compile->default(compile);test->test"/>
+		<dependency org="org.scala-sbt" name="util-testing_2.11" rev="0.1.0-M13" conf="test->default(compile)"/>
+		<dependency org="org.scalacheck" name="scalacheck_2.11" rev="1.13.1" conf="test->default(compile)"/>
+		<dependency org="org.scalatest" name="scalatest_2.11" rev="2.2.6" conf="test->default(compile)"/>
+		<dependency org="junit" name="junit" rev="4.11" conf="test->default(compile)"/>
+	</dependencies>
+</ivy-module>
