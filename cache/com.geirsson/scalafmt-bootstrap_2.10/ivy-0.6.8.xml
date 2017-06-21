@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="com.geirsson"
+		module="scalafmt-bootstrap_2.10"
+		revision="0.6.8"
+		status="release"
+		publication="20170406211949"
+		e:info.apiURL="https://olafurpg.github.io/scalafmt/docs/"
+	>
+		<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0" />
+		<description homepage="https://github.com/scalameta/scalafmt">
+		bootstrap
+		</description>
+		<e:sbtTransformHash>cd61f53345d73dd0a1b266c2aa76f05d7a1dc155</e:sbtTransformHash>
+		<m:properties__info.apiURL>https://olafurpg.github.io/scalafmt/docs/</m:properties__info.apiURL>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="scalafmt-bootstrap_2.10" type="jar" ext="jar" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.6" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="com.martiansoftware" name="nailgun-server" rev="0.9.1" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="io.get-coursier" name="coursier_2.10" rev="1.0.0-M15-5" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="io.get-coursier" name="coursier-cache_2.10" rev="1.0.0-M15-5" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.scalatest" name="scalatest_2.10" rev="3.0.1" force="true" conf="test->runtime(*),master(compile)"/>
+	</dependencies>
+</ivy-module>

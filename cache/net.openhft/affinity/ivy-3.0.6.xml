@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="net.openhft"
+		module="affinity"
+		revision="3.0.6"
+		status="release"
+		publication="20160409135103"
+	>
+		<license name="GNU General Lesser Public License (LGPL) version 3.0" url="http://www.gnu.org/licenses/lgpl-3.0.html" />
+		<description homepage="">
+		Java Thread Affinity library
+		</description>
+		<m:dependency.management__org.apache.logging.log4j__log4j-core__version>2.5</m:dependency.management__org.apache.logging.log4j__log4j-core__version>
+		<m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.quickfix__version>1.6.1_1</m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.quickfix__version>
+		<m:dependency.management__org.ow2.asm__asm__version>5.0.4</m:dependency.management__org.ow2.asm__asm__version>
+		<m:dependency.management__org.openjdk.jmh__jmh-core-benchmarks__version>1.11.3</m:dependency.management__org.openjdk.jmh__jmh-core-benchmarks__version>
+		<m:dependency.management__org.apache.derby__derby__version>10.12.1.1</m:dependency.management__org.apache.derby__derby__version>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>1.1.3</m:dependency.management__ch.qos.logback__logback-classic__version>
+		<m:dependency.management__com.sun.java__tools__version>${java.version}</m:dependency.management__com.sun.java__tools__version>
+		<m:dependency.management__org.powermock__powermock-api-mockito__version>1.6.4</m:dependency.management__org.powermock__powermock-api-mockito__version>
+		<m:dependency.management__org.glassfish.grizzly__grizzly-framework__version>2.3.24</m:dependency.management__org.glassfish.grizzly__grizzly-framework__version>
+		<m:dependency.management__org.kohsuke.jetbrains__annotations__version>9.0</m:dependency.management__org.kohsuke.jetbrains__annotations__version>
+		<m:dependency.management__com.google.auto.oldValue__auto-oldValue__version>1.0-rc1</m:dependency.management__com.google.auto.oldValue__auto-oldValue__version>
+		<m:dependency.management__io.netty__netty-all__version>5.0.0.Alpha2</m:dependency.management__io.netty__netty-all__version>
+		<m:dependency.management__org.powermock__powermock-module-junit4__version>1.6.4</m:dependency.management__org.powermock__powermock-module-junit4__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__version>4.8.0</m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__version>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__version>1.7.14</m:dependency.management__org.slf4j__slf4j-log4j12__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.14</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__uk.co.real-logic__Agrona__version>0.4.10</m:dependency.management__uk.co.real-logic__Agrona__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-container-native__version>4.8.0</m:dependency.management__org.ops4j.pax.exam__pax-exam-container-native__version>
+		<m:dependency.management__org.apache.commons__commons-lang3__version>3.4</m:dependency.management__org.apache.commons__commons-lang3__version>
+		<m:dependency.management__org.yaml__snakeyaml__version>1.16</m:dependency.management__org.yaml__snakeyaml__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-reference__version>2.4.5</m:dependency.management__org.ops4j.pax.url__pax-url-reference__version>
+		<m:dependency.management__net.java.dev.jna__jna-platform__version>4.2.1</m:dependency.management__net.java.dev.jna__jna-platform__version>
+		<m:dependency.management__org.eclipse.jetty.websocket__websocket-client__version>9.3.7.v20160115</m:dependency.management__org.eclipse.jetty.websocket__websocket-client__version>
+		<m:dependency.management__org.openjdk.jmh__jmh-generator-annprocess__scope>test</m:dependency.management__org.openjdk.jmh__jmh-generator-annprocess__scope>
+		<m:dependency.management__net.java.dev.jna__jna__version>4.2.1</m:dependency.management__net.java.dev.jna__jna__version>
+		<m:dependency.management__org.mockito__mockito-core__version>2.0.41-beta</m:dependency.management__org.mockito__mockito-core__version>
+		<m:dependency.management__com.squareup__javapoet__version>1.5.1</m:dependency.management__com.squareup__javapoet__version>
+		<m:dependency.management__org.dcache__nfs4j-core__version>0.10.6</m:dependency.management__org.dcache__nfs4j-core__version>
+		<m:dependency.management__org.testng__testng__version>6.9.10</m:dependency.management__org.testng__testng__version>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.7.14</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:dependency.management__com.sun.java__tools__scope>system</m:dependency.management__com.sun.java__tools__scope>
+		<m:dependency.management__javax.inject__javax.inject__version>1</m:dependency.management__javax.inject__javax.inject__version>
+		<m:dependency.management__org.codehaus.jettison__jettison__version>1.3.7</m:dependency.management__org.codehaus.jettison__jettison__version>
+		<m:dependency.management__com.google.code.gson__gson__version>2.5</m:dependency.management__com.google.code.gson__gson__version>
+		<m:dependency.management__org.osgi__org.osgi.compendium__version>5.0.0</m:dependency.management__org.osgi__org.osgi.compendium__version>
+		<m:dependency.management__com.thoughtworks.xstream__xstream__version>1.4.8</m:dependency.management__com.thoughtworks.xstream__xstream__version>
+		<m:dependency.management__org.eclipse.jetty.websocket__websocket-api__version>9.3.7.v20160115</m:dependency.management__org.eclipse.jetty.websocket__websocket-api__version>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:dependency.management__log4j__log4j__version>1.2.17</m:dependency.management__log4j__log4j__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-compressingStream__version>2.4.0</m:dependency.management__org.ops4j.pax.url__pax-url-compressingStream__version>
+		<m:dependency.management__org.openjdk.jmh__jmh-generator-annprocess__version>1.11.3</m:dependency.management__org.openjdk.jmh__jmh-generator-annprocess__version>
+		<m:dependency.management__org.slf4j__slf4j-nop__version>1.7.14</m:dependency.management__org.slf4j__slf4j-nop__version>
+		<m:dependency.management__org.eclipse.jetty.websocket__websocket-server__version>9.3.7.v20160115</m:dependency.management__org.eclipse.jetty.websocket__websocket-server__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-api__version>2.5</m:dependency.management__org.apache.logging.log4j__log4j-api__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-slf4j-impl__version>2.5</m:dependency.management__org.apache.logging.log4j__log4j-slf4j-impl__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-link-mvn__version>4.8.0</m:dependency.management__org.ops4j.pax.exam__pax-exam-link-mvn__version>
+		<m:dependency.management__net.sf.trove4j__trove4j__version>3.0.3</m:dependency.management__net.sf.trove4j__trove4j__version>
+		<m:properties__native.source.dir>src/main/c</m:properties__native.source.dir>
+		<m:dependency.management__org.apache.felix__org.apache.felix.framework__version>5.4.0</m:dependency.management__org.apache.felix__org.apache.felix.framework__version>
+		<m:dependency.management__org.easymock__easymock__version>3.4</m:dependency.management__org.easymock__easymock__version>
+		<e:sbtTransformHash>fd253ab976a6d755a5ab1297c4b6b1d57cb6e0d8</e:sbtTransformHash>
+		<m:dependency.management__org.slf4j__jul-to-slf4j__version>1.7.14</m:dependency.management__org.slf4j__jul-to-slf4j__version>
+		<m:dependency.management__org.xerial.snappy__snappy-java__version>1.1.2.1</m:dependency.management__org.xerial.snappy__snappy-java__version>
+		<m:maven.plugins>org.apache.maven.plugins__maven-release-plugin__2.3.2|org.apache.maven.plugins__maven-enforcer-plugin__1.4.1|org.apache.maven.plugins__maven-release-plugin__2.3.2|org.apache.maven.plugins__maven-enforcer-plugin__1.4.1|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-scm-publish-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-javadoc-plugin__null|org.apache.maven.plugins__maven-release-plugin__2.3.2|org.apache.maven.plugins__maven-enforcer-plugin__1.4.1|org.apache.maven.plugins__maven-release-plugin__2.3.2|org.apache.maven.plugins__maven-enforcer-plugin__1.4.1|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-scm-publish-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-javadoc-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|null__maven-antrun-plugin__1.7|org.codehaus.mojo__exec-maven-plugin__1.2.1|org.apache.maven.plugins__maven-scm-publish-plugin__null|org.apache.servicemix.tooling__depends-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null</m:maven.plugins>
+		<m:dependency.management__com.intellij__annotations__version>12.0</m:dependency.management__com.intellij__annotations__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__version>2.4.5</m:dependency.management__org.ops4j.pax.url__pax-url-aether__version>
+		<m:dependency.management__org.openjdk.jmh__jmh-core__version>1.11.3</m:dependency.management__org.openjdk.jmh__jmh-core__version>
+		<m:dependency.management__org.osgi__org.osgi.core__version>6.0.0</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:dependency.management__org.hamcrest__hamcrest-all__version>1.3</m:dependency.management__org.hamcrest__hamcrest-all__version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:dependency.management__ch.qos.logback__logback-core__version>1.1.3</m:dependency.management__ch.qos.logback__logback-core__version>
+		<m:dependency.management__com.google.guava__guava-testlib__version>19.0</m:dependency.management__com.google.guava__guava-testlib__version>
+		<m:dependency.management__org.apache.mina__mina-core__version>2.0.9</m:dependency.management__org.apache.mina__mina-core__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-jul__version>2.5</m:dependency.management__org.apache.logging.log4j__log4j-jul__version>
+		<m:dependency.management__joda-time__joda-time__version>2.9.2</m:dependency.management__joda-time__joda-time__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="affinity" type="bundle" ext="jar" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.14" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="net.java.dev.jna" name="jna" rev="4.2.1" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="net.java.dev.jna" name="jna-platform" rev="4.2.1" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="com.intellij" name="annotations" rev="12.0" force="true" conf="compile->compile(*),master(compile);runtime->runtime(*)"/>
+		<dependency org="org.easymock" name="easymock" rev="3.4" force="true" conf="test->runtime(*),master(compile)"/>
+		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(compile)"/>
+		<dependency org="org.slf4j" name="slf4j-simple" rev="1.7.14" force="true" conf="test->runtime(*),master(compile)"/>
+	</dependencies>
+</ivy-module>
